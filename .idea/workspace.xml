@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1826ad9-de1b-40fe-ac9f-dfa0ac367899" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Server_Service/Product.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Server_Service/Products.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Server_Service/StartService.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/IProductService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/ProductPublisher.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Server_Service/Products.java" afterPath="$PROJECT_DIR$/src/Server_Service/Products.java" />
+      <change beforePath="$PROJECT_DIR$/src/Server_Service/StartService.java" afterPath="$PROJECT_DIR$/src/Server_Service/ProductPublisher.java" />
     </list>
     <ignored path="SS18_SWS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,13 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Server_Service/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="68">
+              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#606#607#0" expanded="true" />
                 <element signature="e#638#639#0" expanded="true" />
                 <element signature="e#669#670#0" expanded="true" />
@@ -47,11 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Products.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductPublisher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Server_Service/ProductPublisher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Products.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Server_Service/Products.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="354">
+              <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,8 +91,10 @@
         <option value="$PROJECT_DIR$/src/StartService.java" />
         <option value="$PROJECT_DIR$/src/Server_Service/StartService.java" />
         <option value="$PROJECT_DIR$/src/IProductService.java" />
-        <option value="$PROJECT_DIR$/src/Server_Service/Products.java" />
         <option value="$PROJECT_DIR$/src/Server_Service/Product.java" />
+        <option value="$PROJECT_DIR$/src/ProductPublisher.java" />
+        <option value="$PROJECT_DIR$/src/Server_Service/ProductPublisher.java" />
+        <option value="$PROJECT_DIR$/src/Server_Service/Products.java" />
       </list>
     </option>
   </component>
@@ -579,12 +586,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523876662819</updated>
-      <workItem from="1523880812098" duration="2173000" />
+      <workItem from="1523880812098" duration="2713000" />
     </task>
+    <task id="LOCAL-00001" summary="new product class -&gt; better implementation with list of products">
+      <created>1523883031704</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523883031705</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2173000" />
+    <option name="totallyTimeSpent" value="2713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="0" width="683" height="732" extended-state="0" />
@@ -625,6 +640,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new product class -&gt; better implementation with list of products" />
+    <option name="LAST_COMMIT_MESSAGE" value="new product class -&gt; better implementation with list of products" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -647,31 +666,12 @@
         <state relative-caret-position="425">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#606#607#0" expanded="true" />
             <element signature="e#638#639#0" expanded="true" />
             <element signature="e#669#670#0" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
             <element signature="e#735#736#0" expanded="true" />
             <element signature="e#770#771#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server_Service/StartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server_Service/Products.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -684,18 +684,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProductPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Server_Service/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="68">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#606#607#0" expanded="true" />
             <element signature="e#638#639#0" expanded="true" />
             <element signature="e#669#670#0" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
             <element signature="e#735#736#0" expanded="true" />
             <element signature="e#770#771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server_Service/ProductPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server_Service/Products.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

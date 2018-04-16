@@ -1,11 +1,10 @@
-import Server_Service.Product;
+package Server_Service;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
-
-import java.util.*;
+import java.util.ArrayList;
 
 @WebService
 @SOAPBinding(style = Style.RPC)
@@ -42,8 +41,7 @@ public class Products {
                 return true;
             }
         }
-        else{
-            return false;
-        }
+
+        return false;
     }
 }
