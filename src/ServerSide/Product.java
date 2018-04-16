@@ -1,11 +1,8 @@
-package Server_Service;
-
-import javax.jws.WebService;
+package ServerSide;
 
 import java.lang.*;
-import java.util.List;
 
-@WebService(endpointInterface = "Products")
+// Product type def
 public class Product {
     private Integer productID;
     private String productName;
@@ -27,11 +24,17 @@ public class Product {
         return productID;
     }
 
+    public void setProductID(Integer productID) { this.productID = productID; }
+
     public String getName() {
         return productName;
     }
 
+    public void setName(String name) { this.productName = name; }
+
     public Double getPrice() {
         return productPrice;
     }
+
+    public void setPrice(Double price) { this.productPrice = price; }
 }
