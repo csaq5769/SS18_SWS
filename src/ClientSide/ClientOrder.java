@@ -8,8 +8,7 @@ import java.util.*;
 public class ClientOrder {
 
     public static void main(String[] args) throws Exception {
-        String desicion;
-        int id, amount;
+        int id, amount,desicion;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -19,7 +18,8 @@ public class ClientOrder {
 
         while(true) {
             System.out.println("All products in our range:");
-            for (int i=0; i<p.getProductList().getItem().size(); i++) {
+            System.out.println(p.getProduct(2).getName());
+            for (int i=0; i< p.getProductList().getItem().size(); i++) {
                 Product prod = p.getProductList().getItem().get(i);
                 System.out.println("id:" + prod.getProductID() + " name:" + prod.getName() + " price:" + prod.getPrice());
             }
@@ -33,9 +33,9 @@ public class ClientOrder {
             } else {
                 System.out.println("order declined");
             }
-            System.out.println("Do you want to place anoher order  Yes/No");
-            desicion = scanner.nextLine();
-            if (desicion.equals("No")) {
+            System.out.println("Do you want to place another order  Yes..1/No...0");
+            desicion = scanner.nextInt();
+            if (desicion==0) {
                 break;
             }
         }

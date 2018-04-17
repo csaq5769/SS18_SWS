@@ -37,9 +37,9 @@ public class ProductIMPL {
     // returns the product object whose id is given
     @WebMethod
     public Product getProduct(int productID) throws SOAPException {
-        for (Product prd : products) {
-            if (prd.getProductID() == productID)
-                return prd;
+        for (int i=0; i<products.size();i++) {
+            if (products.get(i).getProductID() == productID)
+                return products.get(i);
         }
         SOAPFactory soapFactory = SOAPFactory.newInstance();
         SOAPFault soapFault = soapFactory.createFault("no Product found", new QName("http://schemas.xmlsoap.org/soap/envelope/", "Client"));
