@@ -1,11 +1,10 @@
 package ClientSide;
 
-import ServerSide.Product;
-import ServerSide.ProductIMPL;
-import serverside.ProductSEI;
-import serverside.ProductIMPLService;
+import ws.Product;
+import ws.ProductIMPLService;
+import ws.ProductSEI;
 
-import java.util.Scanner;
+import java.util.*;
 
 // TODO: in order to access our product service we need to parse the wsdl file; this is done with 'wsimport -keep http://localhost:8080/soap/prod?wsdl' (or wsimport productservice.xml)
 // NOTE: the above command will generate the service code in i. e. ProductIMPLService.java which then is the service we need to access below
@@ -25,7 +24,8 @@ public class ClientOrder {
 
         while(true) {
             System.out.println("All products in our range:");
-            for (Product prod : p.getProductList()) {
+            for (int i=0; i<p.getProductList().getItem().size(); i++) {
+                Product prod = p.getProductList().getItem().get(i);
                 System.out.println("id:" + prod.getProductID() + " name:" + prod.getName() + " price:" + prod.getPrice());
             }
             System.out.println("Please type in the product id of the product you want to buy and how much");

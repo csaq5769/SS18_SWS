@@ -3,7 +3,7 @@ import javax.xml.ws.Endpoint;
 
 public class ProductPublisher {
     public static void main(String[] args) {
-        String url = "http://localhost:9000/soap";
+        String url = "http://localhost:9090/soap";
         Endpoint.publish(url, new ProductIMPL());
         System.out.println("Service started @ " + url);
     }
