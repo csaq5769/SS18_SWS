@@ -1,9 +1,5 @@
 package ClientSide;
 
-import ws.Product;
-import ws.ProductIMPLService;
-import ws.ProductSEI;
-
 import java.util.*;
 
 // TODO: in order to access our product service we need to parse the wsdl file; this is done with 'wsimport -keep http://localhost:8080/soap/prod?wsdl' (or wsimport productservice.xml)
@@ -12,7 +8,6 @@ import java.util.*;
 public class ClientOrder {
 
     public static void main(String[] args) throws Exception {
-
         String desicion;
         int id, amount;
 

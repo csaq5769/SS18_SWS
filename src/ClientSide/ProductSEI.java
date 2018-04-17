@@ -1,5 +1,9 @@
 
-package ws;
+package ClientSide;
+
+import ClientSide.ObjectFactory;
+import ClientSide.Product;
+import ClientSide.ProductArray;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -27,7 +31,7 @@ public interface ProductSEI {
     /**
      * 
      * @return
-     *     returns ws.ProductArray
+     *     returns ClientSide.ProductArray
      */
     @WebMethod
     @WebResult(partName = "return")
@@ -38,7 +42,7 @@ public interface ProductSEI {
      * 
      * @param arg0
      * @return
-     *     returns ws.Product
+     *     returns ClientSide.Product
      */
     @WebMethod
     @WebResult(partName = "return")

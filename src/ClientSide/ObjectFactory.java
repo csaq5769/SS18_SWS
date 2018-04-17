@@ -1,5 +1,5 @@
 
-package ws;
+package ClientSide;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

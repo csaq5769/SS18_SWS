@@ -1,5 +1,5 @@
 
-package ws;
+package ClientSide;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ProductIMPLService", targetNamespace = "http://ServerSide/", wsdlLocation = "http://localhost:9000/soap/?wsdl")
+@WebServiceClient(name = "ProductIMPLService", targetNamespace = "http://ServerSide/", wsdlLocation = "http://localhost:9090/soap?wsdl")
 public class ProductIMPLService
     extends Service
 {
@@ -30,7 +30,7 @@ public class ProductIMPLService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:9090/soap/?wsdl");
+            url = new URL("http://localhost:9090/soap?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

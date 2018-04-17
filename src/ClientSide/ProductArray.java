@@ -1,5 +1,7 @@
 
-package ws;
+package ClientSide;
+
+import ClientSide.Product;
 
 import java.util.ArrayList;
 import java.util.List;
