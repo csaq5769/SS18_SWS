@@ -2,11 +2,9 @@ package ClientSide;
 
 import ServerSide.Product;
 import ServerSide.ProductIMPL;
-import ServerSide.ProductSEI;
+import serverside.ProductSEI;
+import serverside.ProductIMPLService;
 
-import java.net.URL;
-import javax.xml.namespace.QName;
-import javax.xml.ws.Service;
 import java.util.Scanner;
 
 // TODO: in order to access our product service we need to parse the wsdl file; this is done with 'wsimport -keep http://localhost:8080/soap/prod?wsdl' (or wsimport productservice.xml)
@@ -22,12 +20,8 @@ public class ClientOrder {
         Scanner scanner = new Scanner(System.in);
 
         // create service
-        // NOTE: if we create the service using wsimport the generation below would not be needed
-        URL url = new URL("http://localhost:8080/soap/prod?wsdl");
-        QName qname = new QName("http://ServerSide/", "ProductIMPLService");
-        Service service = Service.create(url, qname); // NOTE: when using wsimport: call ProductIMPLService productService = new ProductIMPLService();
-
-        ProductSEI p = service.getPort(ProductSEI.class); // NOTE: when using wsimport: call productService.getProductIMPLPort();
+        ProductIMPLService service = new ProductIMPLService();
+        ProductSEI p = service.getProductIMPLPort(); // NOTE: when using wsimport: call productService.getProductIMPLPort();
 
         while(true) {
             System.out.println("All products in our range:");
