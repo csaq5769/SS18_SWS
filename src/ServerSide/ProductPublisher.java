@@ -9,4 +9,4 @@ public class ProductPublisher {
     }
 }
 
-// note: service wsdl can be accessed after publishing the service and running the Product class; access wsdl through http://localhost:9090/soap/prod?wsdl
+// note: service wsdl can be accessed after publishing the service and running the Product class; access wsdl through http://localhost:9000/prod?wsdl

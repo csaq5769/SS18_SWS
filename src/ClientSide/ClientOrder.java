@@ -9,7 +9,15 @@ import java.util.*;
 public class ClientOrder {
 
     public static void main(String[] args) throws Exception {
-        int id, amount,desicion;
+         /**
+         // Tracing XML request/responses with JAX-WS
+         System.setProperty("com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump", "true");
+         System.setProperty("com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.dump", "true");
+         System.setProperty("com.sun.xml.ws.transport.http.HttpAdapter.dump", "true");
+         System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dump", "true");
+         */
+
+        int id, amount;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -35,8 +43,8 @@ public class ClientOrder {
                 System.out.println("order declined");
             }
             System.out.println("Do you want to place another order  Yes..1/No...0");
-            desicion = scanner.nextInt();
-            if (desicion==0) {
+            int dec = scanner.nextInt();
+            if (dec==0) {
                 break;
             }
         }
