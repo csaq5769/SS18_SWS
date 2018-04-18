@@ -1,5 +1,5 @@
 
-package ClientSide;
+package ws;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ProductIMPLService", targetNamespace = "http://ServerSide/", wsdlLocation = "http://localhost:9090/soap?wsdl")
+@WebServiceClient(name = "ProductIMPLService", targetNamespace = "http://ServerSide/", wsdlLocation = "http://localhost:9000/prod?wsdl")
 public class ProductIMPLService
     extends Service
 {
@@ -30,7 +30,7 @@ public class ProductIMPLService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:9090/soap?wsdl");
+            url = new URL("http://localhost:9000/prod?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
@@ -65,11 +65,11 @@ public class ProductIMPLService
     /**
      * 
      * @return
-     *     returns ProductSEI
+     *     returns ProductIMPL
      */
     @WebEndpoint(name = "ProductIMPLPort")
-    public ProductSEI getProductIMPLPort() {
-        return super.getPort(new QName("http://ServerSide/", "ProductIMPLPort"), ProductSEI.class);
+    public ProductIMPL getProductIMPLPort() {
+        return super.getPort(new QName("http://ServerSide/", "ProductIMPLPort"), ProductIMPL.class);
     }
 
     /**
@@ -77,11 +77,11 @@ public class ProductIMPLService
      * @param features
      *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
      * @return
-     *     returns ProductSEI
+     *     returns ProductIMPL
      */
     @WebEndpoint(name = "ProductIMPLPort")
-    public ProductSEI getProductIMPLPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://ServerSide/", "ProductIMPLPort"), ProductSEI.class, features);
+    public ProductIMPL getProductIMPLPort(WebServiceFeature... features) {
+        return super.getPort(new QName("http://ServerSide/", "ProductIMPLPort"), ProductIMPL.class, features);
     }
 
     private static URL __getWsdlLocation() {

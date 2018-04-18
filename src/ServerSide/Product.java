@@ -5,7 +5,6 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.lang.*;
 
-// Product type def
 @XmlRootElement(name = "product")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Product {
